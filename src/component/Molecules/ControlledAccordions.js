@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ControlledAccordions(props) {
+export const ControlledAccordions = ({...props}) => {
   const classes = useStyles();
   const { componentGuideList } = props;
   const [expanded, setExpanded] = React.useState(false);

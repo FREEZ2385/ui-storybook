@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardComponent(props) {
+export const CardComponent = ({ ...props }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const {title, date, content, image} = props;
